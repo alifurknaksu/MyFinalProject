@@ -19,7 +19,7 @@ namespace WebAPI.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet("getall")]
         public IActionResult GettAll()
         {
             

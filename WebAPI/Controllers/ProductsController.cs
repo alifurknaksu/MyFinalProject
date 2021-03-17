@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet("getall")]
         public IActionResult GettAll()
         {
             Thread.Sleep(1000);
@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
     
         }
 
-        [HttpGet("GetById")]
+        [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
             var result = _productService.GetById(id);
@@ -63,7 +63,7 @@ namespace WebAPI.Controllers
 
 
 
-        [HttpPost("Add")]
+        [HttpPost("add")]
         public IActionResult Add(Product product)
         {
             var result = _productService.Add(product);
