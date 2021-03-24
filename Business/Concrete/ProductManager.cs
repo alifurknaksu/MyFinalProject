@@ -34,7 +34,7 @@ namespace Business.Concrete
         //[LogAspect]-->AOP
         //[RemoveCache]
         //[Transaction]
-        [SecuredOperation("product.add,admin")] //Claim
+        //[SecuredOperation("product.add,admin")] //Claim
         [ValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Product product)
